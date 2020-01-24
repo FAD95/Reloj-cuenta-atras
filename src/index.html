@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Pomodoro</a>
+    </nav>
+    <main class="container">
+      <div class="circle-container">
+        <div class="circle ">
+          <h1 id="horasDp"></h1>
+          <h1 id="minutosDp"></h1>
+          <h1 id="segundosDp"></h1>
+        </div>
+      </div>
+
+      <form class="form-group container formulario">
+        <div class="row justify-content-center">
+          <div class="col-2 ">
+            <input type="number" id="horas" class="datos form-control" />
+            <small class="text-muted">Horas</small>
+          </div>
+          <div class="col-2">
+            <input type="number" id="minutos" class="datos form-control" />
+            <small class="text-muted">Minutos</small>
+          </div>
+          <div class="col-2">
+            <input type="number" id="segundos" class="datos form-control" />
+            <small class="text-muted">Segundos</small>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-6 center-block">
+            <input type="button" value="Iniciar" class="datos form-control btn-primary" onclick="iniciar()"/>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
